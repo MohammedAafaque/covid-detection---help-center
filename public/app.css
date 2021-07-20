@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  .example::-webkit-scrollbar {
+    display: none;
+  }
+  .example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.container{
+    margin: 0px 100px;
+    padding: 80px 40px;
+    height: auto;
+    width: 1500px;
+    background: rgba(148, 148, 148, 0.7);
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 3px #000000;
+    position: relative;
+    top: 400px;
+    z-index: 1;
+  }
+
+.country{
+    font-size: 25px;
+}
+
+.flags{
+    border-radius: 5px;
+}
+
+.tableHeadings{
+    font-family: Staatliches;
+    font-size: 35px;
+    font-weight: 700px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 0.05px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.country{
+    font-family: Staatliches;
+    font-size:30px;
+    color: whitesmoke;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+td{
+    font-family: Staatliches;
+    font-size: 25px;
+    color: whitesmoke;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.todayCases {
+    font-family: Staatliches;
+    font-size: 25px;
+    color: rgb(255, 251, 28);
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.todayRecovered {
+    font-family: Staatliches;
+    font-size: 25px;
+    color: rgb(0, 250, 12);
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.todayDeaths{
+    font-family: Staatliches;
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+
+.fullPage{
+    height: 200vh;
+    width: 100vw;
+    background-image:linear-gradient(#2980B9, #6DD5FA, #FFFFFF);
+}
+.container2{
+    margin: 0 50px;
+}
+
+
+.covidResources{
+    font-family: Staatliches;
+    font-size: 105px;
+    text-align: center;
+    padding-top: 90px;
+    /* padding-bottom: 30px; */
+    color: black;
+    -webkit-text-stroke-width: 3.0px;
+    -webkit-text-stroke-color: #00fff7;
+}
+
+.welcomeBrief{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 30px;
+    padding-bottom: 100px;
+    color: white;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: #000000;
+}
+
+.welcomeMessage{
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(148, 148, 148, 0.7);
+}
+
+.blank{
+    padding-top: 40px;;
+}
+
+.makeUse{
+    color: #000000;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hr{
+    border-top: 1px solid black;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.container3{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#ec9f05, #ff4e00);
+}
+
+
+
+.talkTo{
+    font-family: Staatliches;
+    font-size: 150px;
+    text-align: center;
+    padding-bottom: 100px;;
+    color: #ffffff;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #ff4e00;
+    background: none !important;
+    border: none !important;
+}
+
+.welcomecovicompanion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.covicompanion{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 105px;
+    text-align: center;
+    padding-top: 0;
+    position: absolute;
+    margin-top: 200px;
+    padding-bottom: 10px;
+    top: 0;
+    color: blanchedalmond;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #000000;
+    background: none !important;
+    border: none !important;
+}
+
+.incontainer{
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    margin: 0 50px;
+    border-radius: 10px;
+    box-shadow: gray;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.hr1{
+    border-top: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-top: 0;
+}
+
+.coviBrief{
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: #000000;
+}
+
+.coviGuidelines{
+    color: black;
+    
+}
+
+.section {
+    color: brown;
+}
+
+.s1 {
+    color: chartreuse;
+    background-image: url('dashboard.jpg');
+    background-size: cover;
+    /* padding-top: 30%; */
+}
+
+.s2 {
+    color: yellow;
+    background: url('detection.jpg');
+    background-size: cover;
+}
+
+.s3 {
+    color: #faffb8;
+    background: url('resources.jpg');
+    background-size: cover;
+}
+
+.s4 {
+    color: #f5f5f5;
+    background: url('chatbot.jpg');
+    background-size: cover;
+}
+
+.s5 {
+    color: #FFC002;
+    background: url('vaccine.jpg');
+    background-size: cover;
+}
+
+span{
+    background: whitesmoke !important;
+    border: 1px solid black !important;
+    size: 20px !important;
+}
+
+section{
+    margin: 50px;
+    width: 55%;
+    position: absolute;
+    top: 0;
+}
+
+section h2{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800px;
+    font-size: 80px;
+    padding-bottom: 30px;
+}
+
+section h3{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    font-style: italic;
+    padding-bottom: 30px;
+    text-decoration: underline;
+    letter-spacing: 1.5px;
+}
+
+section p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+section button{
+    margin-top: 20px;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.s1Button{
+    background: rgb(22, 19, 19);
+    color: chartreuse;
+    border: 1px solid chartreuse;
+}
+
+.s1Button:hover{
+    background: chartreuse;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+.s2Button{
+    background: #770177;
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+.section a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.s2Button:hover{
+    background: yellow;
+    color: #770177;
+    border: 1px solid #770177;
+    transition: 0.4s;
+}
+
+.s3Button{
+    background: #0b55a0;
+    color: #faffb8;
+    border: 1px solid #faffb8;
+}
+
+.s3Button:hover{
+    background: #faffb8;
+    color: #0b55a0;
+    border: 1px solid #0b55a0;
+    transition: 0.4s;
+}
+
+.s4Button{
+    background: #d85103;
+    color: #faffb8;
+    border: 1px solid #faffb8;
+}
+
+.s4Button:hover{
+    background: #faffb8;
+    color: #d85103;
+    border: 1px solid #d85103;
+    transition: 0.4s;
+}
+
+.s5Button{
+    background: #00113b;
+    color: #FFC002;
+    border: 1px solid #FFC002;
+}
+
+.s5Button:hover{
+    background: #FFC002;
+    color: #00113b;
+    border: 1px solid #00113b;
+    transition: 0.4s;
+}
+
+.s5Button a{
+    text-decoration: none;
+    color: #FFC002;
+}
+
+.s5Button a:hover{
+    text-decoration: none;
+    color: #00113b;
+}
+
+.land {
+    top: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    background: #242424;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box a{
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    padding: 0 40px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.box a:hover{
+    color: yellow;
+    transition: 0.3s;
+
+}
+
+
+.video-background{
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 2px -2px 2px 2px #969696;
+}
+
+
+.CHC{
+    width: 80%;
+    position: absolute;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    font-size: 130px;
+    text-align: center;
+    top: 18%;
+    right: 10%;
+    color: whitesmoke;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000000;
+}
+
+
+.CHCbrief{
+    position: absolute;
+    top: 56%;
+    width: 80%;
+    text-align: center;
+    right: 10%;
+    border: 3px solid #2d3436;
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(#333333, #151616);
+}
+
+.brief1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: chartreuse;
+}
+
+.brief2{
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+
+.CHCbrief button a {
+    text-decoration: none;
+    color: #f7bebe;
+}
+
+.CHCbrief button a:hover {
+    text-decoration: none;
+    color: #a71b02e0;
+}
+
+
+.CHCbrief button{
+    padding: 10px 60px;
+    background: black ;
+    border: 3px solid chartreuse;
+    border-radius: 10px;
+    color: chartreuse;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 20px 0 15px 0;
+}
+
+.CHCbrief button:hover{
+    background: chartreuse;
+    color: black;
+    border: 3px solid chartreuse;
+    transition: 0.3s;
+}
+
+a.brand{
+    position: relative;
+    left: 0;
+    font-size: 35px;
+    top: 0;
+    color: chartreuse;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+}
+
+a.brand:hover{
+    color: chartreuse !important;
+}
+
+nav{
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.favImg{
+    position: relative;
+    top: 0px;
+}

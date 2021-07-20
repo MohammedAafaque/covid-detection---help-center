@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+        integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,500;1,300;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Covid Help Center</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+    <div id="fullPage">
+        <div class="section s0">
+            <div class="box">
+                <a href="#" class="brand"><img src="favicon.png" class="favImg"> CHC </a>
+                <nav>
+                    
+                    <a href="#section1"> Dashboard </a>
+                    <a href="#section2"> Detection </a>
+                    <a href="#section3"> Resources </a>
+                    <a href="#section4"> CoviCompanion </a>
+                    <a href="#section5"> Vaccinate </a>
+                </nav>
+            </div>
+            <video autoplay loop class="video-background" muted play-inline data-keepplaying>
+                <source src="covidLand.mp4" type="video/mp4">
+            </video>
+            <div class="CHC">
+                COVID HELP CENTER
+            </div>
+            <div class="CHCbrief">
+                <div class="brief1">
+                    Coronavirus (COVID-19) is an infectious disease.
+                    It is very important to practice social distancing, to wear masks and to get vaccinated.
+                    Protect yourself and others from infection by washing your hands or using an alcohol based sanitizer
+                    frequently. <br> <br>
+                </div>
+                <div class="brief2">
+                    Below, you will find all kinds of help related to COVID-19.
+                    The Covid dashboard will help you find out the status of Covid globally.
+                    You can also use our detection model to detect if you have
+                    Covid.
+                    You can also find all kinds of help if you are infected with Covid. 
+                    CoviCompanion, our friendly chatbot can assist you with any Covid related queries.
+                    You will find the link to the CoWin website here too!
+                </div>
+                
+                    <a href="#section1">
+                        <button>
+                        Get Started 
+                    </button>
+                    </a>
+            </div>
+        </div>
+
+
+
+        <div class="section s1">
+            <section>
+                <div class="content"> <br> <br> <br>
+                    <h2>Covid Dashboard</h2>
+                    <h3>A global dashboard to track the status of Covid around the world.</h3>
+                    <p>This dashboard provides country wise data about the status of the Novel Corona Virus.
+                        It is a dynamic dashboard that fetches data which is updated daily. It displays the total & new
+                        cases, totally & newly recovered and total & new deaths for each country. The various shades of
+                        red reflect the severity of the pandemic in the respective countries.</p>
+                </div>
+                <form action="/dashboard" method="GET">
+                    <button type="submit" class="s1Button">
+                        Go to Dashboard
+                    </button>
+                </form>
+            </section>
+        </div>
+
+        <div class="section s2">
+            <section>
+                <div class="content">
+                    <h2>Covid Detection Center</h2>
+                    <h3>A model that predicts whether you are Covid positive or negative.</h3>
+                    <p>There are thousands of people who are denied appropriate testing.
+                        This machine learning model overcomes this by providing an interface to the user by putting
+                        forward a list of symptoms based on which the model predicts if the user is Covid Positive or
+                        Covid negative.
+                    </p>
+                </div>
+                <a href="https://covid-detection-center.herokuapp.com/predict">
+                    <button type="submit" class="s2Button">
+                         Go to Detection Center
+                    </button>
+                </a>
+            </section>
+        </div>
+
+        <div class="section s3">
+            <section>
+                <div class="content"> <br>
+                    <h2>Find Covid Resources</h2>
+                    <h3>A tool that finds Covid Centres near you!</h3>
+                    <p>There are thousands of people who are denied appropriate testing.
+                        This machine learning model overcomes this by providing an interface to the user by putting
+                        forward a list of symptoms based on which the model predicts if the user is Covid Positive or
+                        Covid negative.
+                    </p>
+                </div>
+                <form action="/resources" method="GET">
+                    <button type="submit" class="s3Button">
+                        Go to Find Resources
+                    </button>
+                </form>
+            </section>
+        </div>
+
+        <div class="section s4">
+            <section>
+                <div class="content">
+                    <h2>Talk to CoviCompanion</h2>
+                    <h3>A bot that replies to all your Covid related queries!</h3>
+                    <p>
+                        This chat bot solves all your queries about Covid and all the related factors.
+                        It answers questions about what one should do if they contract the virus and the precautionary
+                        measures to be take.
+                        It also busts myths related to the Novel Corona Virus.
+                    </p>
+                </div>
+                <form action="/CoviCompanion" method="GET">
+                    <button type="submit" class="s4Button">
+                        Talk to CoviCompanion
+                    </button>
+                </form>
+            </section>
+        </div>
+
+        <div class="section s5">
+            <section>
+                <div class="content"> <br> <br> <br>
+                    <h2>Get Vaccinated</h2>
+                    <h3>Register yourself and book your slot!</h3>
+                    <p>
+                        We need to fight the virus together. Getting vaccinated puts us a step ahead of the virus.
+                        COVID-19 vaccines help in keeping you from getting seriously ill even if you do get COVID-19.
+                        Getting vaccinated yourself may also protect people around you, particularly people at increased
+                        risk for severe illness from COVID-19.
+                    </p>
+                </div>
+                    
+                        <a href="https://selfregistration.cowin.gov.in/">
+                            <button type="submit" class="s5Button">
+                            Go to CoWin
+                            </button>
+                        </a>
+                
+            </section>
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+        integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new fullpage('#fullPage', {
+            autoScrolling: true,
+            navigation: true,
+            navigationTooltips: ['Home','Covid Dashboard', 'Covid Detection Center', 'Find Covid Resources', 'CoviCompanion', 'Get Vaccinated'],
+            anchors: ['section0', 'section1', 'section2', 'section3', 'section4', 'section5']
+        })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
