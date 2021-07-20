@@ -4,6 +4,7 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/source'));
 const fetch = require("node-fetch");
+const port = process.env.PORT || 5000;
 
 
 app.get("/", function(req, res){
@@ -31,5 +32,5 @@ app.get("/CoviCompanion", function(req, res){
 })
 
 
-app.listen(process.env.PORT || 5000, () => console.log('App available on http://localhost:5000'))
+app.listen(port, () => console.log('App available on http://localhost:5000'))
 
